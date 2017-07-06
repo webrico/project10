@@ -1,0 +1,83 @@
+.header_wrap{
+	width: 100%;
+	min-height: 866px;
+	background: url(../img/bg_header.png) no-repeat top left;
+	background-size: 100% 100%;
+	box-sizing: border-box;
+}
+
+header{
+	padding-top: 1.5%;
+	.wrap;
+	max-width: 960px;
+	.logo{
+		.wrap;
+		padding: 3% 0;
+		width: 33%;
+		max-height: 175px;
+		background: url(../img/logo_bg.png) no-repeat top center;
+		background-size: 100% 100%;
+		display: flex;
+		align-items: flex-end;
+		img{
+			width: 68%
+		}
+	}
+	.header_main{
+		background: radial-gradient(ellipse at top, rgba(19, 71, 8, .8) 0%,rgba(255,255,255,0) 70%);
+		border-radius: 18% 18% 0 0;
+		text-align: center;
+		padding-top: 1px;
+		nav{
+			margin: -1% 0 3% 0;
+			padding-top: 1%;
+			min-height: 60px;
+			border-top: 8px solid #fff;
+			border-radius: 50% 50% 0 0;
+			overflow: hidden;
+			@media screen and(max-width: 700px) {
+				border-radius: 40% 40% 0 0;
+				padding-top: 0.5%;
+				
+			}
+			@media screen and(max-width: 500px) {
+				border-radius: 35% 35% 0 0;
+				padding-top: 0;
+				
+			}
+			a{
+				padding: 2.5% 2%;
+				border-radius: 5px;
+				text-transform: uppercase;
+				font-family: @nimbusBold, sans-serif;
+				font-size: 1.187rem;
+				line-height: 2.5rem;
+				
+			}
+			a:hover{
+				background-color: @activeColor;
+			}
+			.active{
+				background-color: @activeColor;
+			}
+		}
+		h1{
+			color: @baseColor;
+			font-family: @helvetBlack, sans-serif;
+			font-size: 4.25rem;
+			line-height: 3.75rem;
+			text-shadow: 0 0 6px rgba(31, 88, 0, .75);
+			margin-bottom: 2%;
+			@media screen and (max-width: 600px) {
+				font-size: 3rem;
+			}
+		}
+		.content{
+			color: @baseColor;
+			padding: 2% 3%;
+			background-color: #26311c;
+			opacity: .75;
+			border-radius: 5px;
+		}
+	}
+}

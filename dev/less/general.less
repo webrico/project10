@@ -1,0 +1,46 @@
+@import 'import/reset';
+@import 'import/fonts';
+@import 'import/_setting';
+@import 'import/_mixins';
+
+.wrap{
+	margin: 0 auto;
+	max-width: @full-width;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.title{
+	font-family: @helvetLight, sans-serif;
+	font-size: 2.125rem;
+	line-height: 2.5rem;
+	margin-bottom: 2%;
+}
+.text{
+	font-family: Arial, sans-serif;
+	font-size: .875rem;
+	line-height: 1.56rem;
+}
+
+.button{
+	border: 2px solid #fff;
+	padding: 3% 19%;
+	font-family: @nimbusBold;
+	font-size: 1.187rem;
+	line-height: 2.5rem;
+	text-transform: uppercase;
+	border-radius: 5px;
+	&:hover{
+		color: @secondColor;
+		border-color: @secondColor;
+	}
+}
+
+
+@import 'import/header';
+@import 'import/main';
+@import 'import/footer';
