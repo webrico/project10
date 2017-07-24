@@ -42,9 +42,18 @@
 	padding-top: 5.5%;
 	.content_wrap{
 		.wrap;
+		@media screen and(max-width: 960px) {
+			padding: 0 40px;
+		}
 		.content{
 			text-align: left;
 			max-width: 46.2%;
+			@media screen and(max-width: 960px) {
+				max-width: 60%;
+			}
+			@media screen and(max-width: 380px) {
+				max-width: 100%;
+			}
 			.title{	
 				line-height: 3.312rem;
 				margin-bottom: 0;

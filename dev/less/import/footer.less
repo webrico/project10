@@ -19,6 +19,9 @@
 			@media screen and(max-width: 600px) {
 				font-size: .9rem;
 			}
+			@media screen and(max-width: 320px) {
+				font-size: .8rem;
+			}
 		}
 		a:hover{
 			color: @secondColor;
@@ -41,13 +44,15 @@
 			line-height: 4rem;
 		}
 		@media screen and(max-width: 600px) {
+			display: block;
 			p{
 				text-align: center;
+				line-height: 2rem;
 			}
-			p:first-child{
-				padding-right: .5%;
-				border-right: 1px solid #919191;
-			}
+			// p:first-child{
+			// 	padding-right: .5%;
+			// 	border-right: 1px solid #919191;
+			// }
 		
 		}
 	}
